@@ -232,6 +232,29 @@ class _MyHomePageState extends State<MyHomePage> {
                                             ),
                                           ],
                                         ),
+
+                                        Row(
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          crossAxisAlignment: CrossAxisAlignment.center,
+
+                                          children:  <Widget>[
+                                            Expanded(
+                                              child: SizedBox(
+                                                width: 100.0,
+                                                child: ElevatedButton(
+
+                                                  onPressed: () {
+                                                    Navigator.of(context).pop();
+                                                  },
+                                                  child: const Text("CLOSE",
+                                                    style: TextStyle(
+                                                        fontSize: 15.0),
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ],
                                     ),
                                   ),
@@ -245,7 +268,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       },
                     );
                   },
-                  child: const Text("Bottom Sheet"),
+                  child: const Text("Modal Bottom Sheet"),
                 ),
               ],
             ),
