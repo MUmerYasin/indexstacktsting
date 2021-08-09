@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
+import 'package:indexstacktsting/modelbottomsheetindexstack.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const ModelBottomSheetIndexStackC(),
     );
   }
 }
@@ -168,23 +169,30 @@ class _MyHomePageState extends State<MyHomePage> {
                                   const Divider(
                                     height: 2.0,
                                   ),
-
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width*0.85,
+                                    width: MediaQuery.of(context).size.width *
+                                        0.85,
                                     child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
                                       children: [
                                         Row(
                                           children: const <Widget>[
                                             Expanded(
                                               child: Card(
-                                                color: Color(
-                                                    0xff3c5899),
+                                                color: Color(0xff3c5899),
                                                 child: ListTile(
-                                                  leading: Icon(Icons.facebook, color: Colors.white,),
-                                                  title: Text('Login with Facebook ', style: TextStyle(color: Colors.white),),
+                                                  leading: Icon(
+                                                    Icons.facebook,
+                                                    color: Colors.white,
+                                                  ),
+                                                  title: Text(
+                                                    'Login with Facebook ',
+                                                    style: TextStyle(
+                                                        color: Colors.white),
+                                                  ),
                                                 ),
                                               ),
                                             ),
@@ -194,18 +202,23 @@ class _MyHomePageState extends State<MyHomePage> {
                                           children: const <Widget>[
                                             Expanded(
                                               child: Card(
-
-                                                color: Color(
-                                                    0xffde4b39),
+                                                color: Color(0xffde4b39),
                                                 child: ListTile(
                                                   // leading: Icon(Icons./, color: Colors.white,),
                                                   leading: IconButton(
                                                     // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
-                                                    icon: FaIcon(FontAwesomeIcons.google, color: Colors.white,),
+                                                    icon: FaIcon(
+                                                      FontAwesomeIcons.google,
+                                                      color: Colors.white,
+                                                    ),
                                                     onPressed: null,
                                                   ),
 
-                                                  title: Text('Login with Google ', style: TextStyle(color: Colors.white),),
+                                                  title: Text(
+                                                    'Login with Google ',
+                                                    style: TextStyle(
+                                                        color: Colors.white),
+                                                  ),
                                                 ),
                                               ),
                                             ),
@@ -215,38 +228,43 @@ class _MyHomePageState extends State<MyHomePage> {
                                           children: const <Widget>[
                                             Expanded(
                                               child: Card(
-
-                                                color: Color(
-                                                    0xff64ccf1),
+                                                color: Color(0xff64ccf1),
                                                 child: ListTile(
                                                   // leading: Icon(Icons./, color: Colors.white,),
                                                   leading: IconButton(
                                                     // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
-                                                    icon: FaIcon(FontAwesomeIcons.twitter, color: Colors.white,),
+                                                    icon: FaIcon(
+                                                      FontAwesomeIcons.twitter,
+                                                      color: Colors.white,
+                                                    ),
                                                     onPressed: null,
                                                   ),
 
-                                                  title: Text('Login with twitter ', style: TextStyle(color: Colors.white),),
+                                                  title: Text(
+                                                    'Login with twitter ',
+                                                    style: TextStyle(
+                                                        color: Colors.white),
+                                                  ),
                                                 ),
                                               ),
                                             ),
                                           ],
                                         ),
-
                                         Row(
-                                          mainAxisAlignment: MainAxisAlignment.center,
-                                          crossAxisAlignment: CrossAxisAlignment.center,
-
-                                          children:  <Widget>[
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: <Widget>[
                                             Expanded(
                                               child: SizedBox(
                                                 width: 100.0,
                                                 child: ElevatedButton(
-
                                                   onPressed: () {
                                                     Navigator.of(context).pop();
                                                   },
-                                                  child: const Text("CLOSE",
+                                                  child: const Text(
+                                                    "CLOSE",
                                                     style: TextStyle(
                                                         fontSize: 15.0),
                                                   ),
@@ -258,8 +276,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                       ],
                                     ),
                                   ),
-
-
                                 ],
                               ),
                             ),
