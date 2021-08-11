@@ -290,6 +290,7 @@ class _ModelBottomSheetIndexStackCState
                                     onPressed: () {
                                       setState(() {
                                         visibilityVariable = false;
+                                        visibilityVariableStack = false;
                                         index = 0;
                                       });
                                       modelbuttonsheetfuns();
@@ -320,6 +321,7 @@ class _ModelBottomSheetIndexStackCState
                                     onPressed: () {
                                       setState(() {
                                         visibilityVariable = false;
+                                        visibilityVariableStack = false;
                                         index = 0;
                                       });
                                       modelbuttonsheetfuns();
@@ -350,6 +352,7 @@ class _ModelBottomSheetIndexStackCState
                                     onPressed: () {
                                       setState(() {
                                         visibilityVariable = false;
+                                        visibilityVariableStack = false;
                                         index = 0;
                                       });
                                       modelbuttonsheetfuns();
@@ -380,6 +383,7 @@ class _ModelBottomSheetIndexStackCState
                                     onPressed: () {
                                       setState(() {
                                         visibilityVariable = false;
+                                        visibilityVariableStack = false;
                                         index = 0;
                                       });
                                       modelbuttonsheetfuns();
